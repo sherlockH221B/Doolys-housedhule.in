@@ -1,13 +1,4 @@
-/**
-* Template Name: Mamba - v4.0.2
-* Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
@@ -37,7 +28,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #428bca;
+  background: #5eaff7;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -101,7 +92,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #topbar .social-links a {
-  color: #5c768d;
+  color: #5eaff7;
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
@@ -176,7 +167,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 0 10px 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  color: #5c768d;
+  color: #5eaff7;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -188,7 +179,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #428bca;
+  color: #042a4a;
 }
 
 .navbar .dropdown ul {
@@ -374,7 +365,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(13, 30, 45, 0.6);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -386,6 +376,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero .carousel-container {
+  filter: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +522,7 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c768d;
+  color: #5eaff7;
 }
 
 .section-title p {
@@ -861,7 +852,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #428bca;
+  
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -872,7 +863,7 @@ section {
 }
 
 .services .icon-box:hover .icon {
-  box-shadow: 0px 0 30px rgba(66, 139, 202, 0.5);
+  box-shadow: 0px 0 10px #F7971E;
 }
 
 .services .title {
@@ -938,7 +929,10 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #428bca;
+  background: #5eaff7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00aeff, #5eaff7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00aeff, #5eaff7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fff;
 }
 
@@ -1121,7 +1115,7 @@ section {
   bottom: -48px;
   left: 20px;
   right: 20px;
-  background: linear-gradient(360deg, #5c768d 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+  background: linear-gradient(360deg, #5eaff7 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
   padding: 15px 0;
   border-radius: 4px;
 }
@@ -1210,7 +1204,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #428bca;
+  color: #1266F1;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #9eccf4;
@@ -1330,14 +1324,14 @@ section {
 }
 
 #footer {
-  background: #587187;
+  background: #232628;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #5c768d;
+  background: #5eaff7;
   border-top: 1px solid #768fa6;
   border-bottom: 1px solid #67839c;
   padding: 60px 0 30px 0;
@@ -1366,12 +1360,33 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #768fa6;
+  background: linear-gradient(120deg,#3b5998, #FFFFFF);
+
+  /* background: linear-gradient(45deg, #405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d);; */
+  color: rgb(7, 0, 0);
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  border-color:#f1f7fb;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-link  {
+  font-size: 18px;
+  display: inline-block;
+  background: linear-gradient(120deg,#3b5998, #FFFFFF);
+
+  /* background: linear-gradient(45deg, #405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d);; */
   color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
+  border-color:#f1f7fb;
   text-align: center;
   width: 36px;
   height: 36px;
