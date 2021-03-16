@@ -412,7 +412,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  color: #fff;
+  color: #040404;
 }
 
 #hero .carousel-inner .carousel-item {
